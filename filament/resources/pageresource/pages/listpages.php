@@ -26,8 +26,9 @@ use Pboivin\FilamentPeek\Tables\Actions\ListPreviewAction;
 
 class ListPages extends ListRecords
 {
-    use HasPreviewModal;
     use ListRecords\Concerns\Translatable;
+
+    use HasPreviewModal;
     use TransTrait;
 
     protected static string $resource = PageResource::class;
@@ -93,8 +94,8 @@ class ListPages extends ListRecords
     {
         return [
             TextColumn::make('title')
-                ->sortable()
-                ->searchable(),
+                    ->sortable()
+                    ->searchable(),
             TextColumn::make('slug')
                 ->sortable()
                 ->searchable(),
