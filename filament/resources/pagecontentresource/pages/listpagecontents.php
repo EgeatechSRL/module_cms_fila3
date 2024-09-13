@@ -27,7 +27,6 @@ class ListPageContents extends ListRecords
     use TransTrait;
 
     public TableLayoutEnum $layoutView = TableLayoutEnum::LIST;
-
     protected static string $resource = PageContentResource::class;
 
     protected function getHeaderActions(): array

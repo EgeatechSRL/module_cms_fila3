@@ -21,7 +21,6 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class PageContentResource extends XotBaseResource
 {
     use Translatable;
-
     protected static ?string $model = PageContent::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
